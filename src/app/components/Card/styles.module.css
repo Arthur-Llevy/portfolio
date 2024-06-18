@@ -1,10 +1,10 @@
 .card {
-    width: 95%;
+	width: 100%;
     max-width: 385px;
     background: #444444;
     border-radius: 5px;
     padding: 10px 14px;
-    height: 60px;
+    height: 55px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -15,7 +15,7 @@
 }
 
 .card h2 {
-	font-size: 20px;
+	font-size: 1em;
 	color: #eee;
 }
 
@@ -29,7 +29,8 @@
     color: #eee;
     font-weight: bold;
     position: absolute;
-    top: 19px;
+    top: 50%;
     left: calc(100% - 20px);
     cursor: pointer;
+    transform: translateY(-50%);
 }

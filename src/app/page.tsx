@@ -8,11 +8,32 @@ export default function Home() {
 
   const trainings = [
     {
+      starts: '2021',
+      ends: '2023',
+      course: 'Desenvolvimento de Sistemas',
+      institution: 'ETE Ginásio Pernambucano',
+      type: 'Técnico'
+    },
+    {
       starts: '2024',
       ends: '2026',
       course: 'Sistemas para Internet',
       institution: 'Universidade Católica de Pernambuco',
       type: 'Tecnólogo'
+    },
+    {
+      starts: '2024',
+      ends: '2025',
+      course: 'Manutenção e Suporte em Informática',
+      institution: 'Instituto Federal de Pernambuco',
+      type: 'Técnico'
+    },
+    {
+      starts: '2024',
+      ends: '2029',
+      course: 'Engenharia da computação',
+      institution: 'Universidade de Pernambuco',
+      type: 'Bacharelado'
     }
   ]
 
@@ -29,15 +50,17 @@ export default function Home() {
       </section>
       <section className={styles.training} id="training">
         <h1>Formação</h1>
-        {trainings.map(training => (
-          <Card 
-            starts={training.starts}
-            ends={training.ends}
-            institution={training.institution}
-            type={training.type}
-            course={training.course}
-          />
-        ))}
+        <div className={styles.cards}>
+          {trainings.map(training => (
+            <Card 
+              starts={training.starts}
+              ends={training.ends}
+              institution={training.institution}
+              type={training.type}
+              course={training.course}
+            />
+          ))}
+        </div>
       </section>
     </>
   );
