@@ -5,8 +5,8 @@ export default function Header(){
 		<header className={styles.header}>
 			<nav>
 				<ul className={styles.ul}>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Formação</a></li>
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#training">Formação</a></li>
 					<li><a href="">Projetos</a></li>
 				</ul>
 			</nav>

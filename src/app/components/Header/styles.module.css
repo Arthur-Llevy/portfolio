@@ -1,11 +1,13 @@
 .header {
-	width: 100vw;
+    width: 100vw;
     height: 70px;
     background: #171717;
     display: flex;
+    top: 0;
     border-radius: 0 0 5px 5px;
     align-items: center;
     justify-content: center;
+    position: fixed;
 }
 
 .ul {

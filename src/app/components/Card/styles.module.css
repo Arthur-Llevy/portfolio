@@ -1,0 +1,35 @@
+.card {
+    width: 95%;
+    max-width: 385px;
+    background: #444444;
+    border-radius: 5px;
+    padding: 10px 14px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: .2s;
+    justify-content: flex-start;
+}
+
+.card h2 {
+	font-size: 20px;
+	color: #eee;
+}
+
+.card p {
+	font-size: 15px;
+	color: #D0D0D0;
+}
+
+.card .moreIcon {
+    font-size: 20px;
+    color: #eee;
+    font-weight: bold;
+    position: absolute;
+    top: 19px;
+    left: calc(100% - 20px);
+    cursor: pointer;
+}
