@@ -53,3 +53,23 @@
     gap: 24px;
     margin: 38px 0 0 0;
 }
+
+@media (max-width: 468px) {
+    .projectCard header {
+        display: flex;
+        margin: 15px auto;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .projectCard header h2 {
+        font-size: 16px;
+        color: #eee;
+    }
+
+    .projectCard main p {
+        color: #eee;
+        font-size: 13px;
+    }
+}
