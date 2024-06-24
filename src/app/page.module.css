@@ -20,6 +20,7 @@
     align-self: self-start;
     padding: 0 0 0 25px;
     font-weight: normal;
+    font-size: 30px;
 }
 
 .about img {
@@ -40,6 +41,7 @@
 	color: #EEEEEE;
     align-self: self-start;
     padding: 0 0 0 25px;
+    font-size: 30px;
     font-weight: normal;
 }
 
@@ -50,4 +52,35 @@
     gap: 46px;
     align-items: center;
     width: 90%;
+}
+
+.projects {
+    margin: 0 0 108px 0;
+}
+
+.projects h1 {
+    color: #EEEEEE;
+    align-self: self-start;
+    padding: 0 0 0 25px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.projects .tag {
+    color: #6C6C6C;
+    font-size: 20px;
+    padding: 0 0 0 25px;
+}
+
+.projectsCard {
+    width: 320px;
+    height: 297px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.projectCarrousel {
+    display: flex;
+    width: calc(2*320px);
+    gap: 20px;
 }

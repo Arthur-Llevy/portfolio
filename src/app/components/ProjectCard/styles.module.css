@@ -1,0 +1,53 @@
+.projectCard {
+    max-width: 331px;
+    width: 320px;
+    background: #444444;
+    margin: 0 auto;
+    height: 297px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.projectCard header {
+    display: flex;
+    margin: 15px auto;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectCard header h2 {
+	font-size: 20px;
+	color: #eee;
+}
+
+.icons svg {
+	width: 24px;
+	height: 24px;
+	color: #eee;
+}
+
+.projectCard main p {
+    color: #eee;
+}
+
+.projectCard footer svg {
+    width: 45px;
+    height: 45px;
+}
+
+.typescriptLogo {
+    color: #0088ff;
+}
+
+.react {
+    color: #00abff;
+}
+
+.projectCard footer {
+    display: flex;
+    gap: 24px;
+    margin: 38px 0 0 0;
+}

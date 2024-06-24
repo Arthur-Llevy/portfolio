@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .icons {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.projectCardListContainer {
+    width: 320px;
+    height: 297px;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: .2s;
+}
+
+.cards {
+    display: flex;
+    width: calc(2*320px);
+    gap: 20px;
+    transition: .2s;
+}

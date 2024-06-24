@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Card from './components/Card';
 import styles from "./page.module.css";
-
+import ProjectCardList from './components/ProjectCardList/';
 import logo from '../../public/profile.jpeg';
 
 export default function Home() {
@@ -37,6 +37,7 @@ export default function Home() {
     }
   ]
 
+
   return (
     <>
       <section className={styles.about} id="about">
@@ -61,6 +62,11 @@ export default function Home() {
             />
           ))}
         </div>
+      </section>
+      <section className={styles.projects} id="projects">
+        <h1>Projetos</h1>
+        <span className={styles.tag}>Front-end</span>
+        <ProjectCardList />
       </section>
     </>
   );
