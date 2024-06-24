@@ -17,7 +17,7 @@ export default function Card({ course, starts, ends, institution, type }: CardPr
 				setIsCardExpanded(true);
 			} else {
 				card.current.style.transition = ".2s";
-				card.current.style.height = "60px";
+				card.current.style.height = "55px";
 				setIsCardExpanded(false);
 			}
 		}
