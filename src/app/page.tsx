@@ -67,6 +67,8 @@ export default function Home() {
         <h1>Projetos</h1>
         <span className={styles.tag}>Front-end</span>
         <ProjectCardList />
+        <span className={styles.tag}>Back-end</span>
+        <ProjectCardList />
       </section>
     </>
   );
