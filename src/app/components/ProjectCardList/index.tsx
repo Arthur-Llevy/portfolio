@@ -14,6 +14,7 @@ export default function ProjectCardList() {
 
 	let [currentCard, setCurrentCard] = useState(1);
 	const cardsRef = useRef<HTMLDivElement>(null);
+	const cardRef = useRef(null)
 
 	const goFoward = () => {
 		setCurrentCard(previousValue => {
@@ -24,7 +25,8 @@ export default function ProjectCardList() {
 			}
 
 			if (cardsRef.current) {
-				cardsRef.current.style.transform = `translateX(-${newValue * 320}px)`;
+				const child: HTMLDivElement = cardsRef.current.firstElementChild as HTMLDivElement;
+				cardsRef.current.style.transform = `translateX(-${newValue * child.offsetWidth + 10}px)`;
 			}
 			return newValue;
 		});
@@ -33,9 +35,9 @@ export default function ProjectCardList() {
 	const goBack = () => {
 		setCurrentCard(previousValue => {
 			let newValue = previousValue - 1;
-
 			if (cardsRef.current) {
-				cardsRef.current.style.transform = `translateX(-${newValue * 320}px)`;
+				const child: HTMLDivElement = cardsRef.current.firstElementChild as HTMLDivElement;
+				cardsRef.current.style.transform = `translateX(-${newValue * child.offsetWidth}px)`;
 			}
 			return newValue;
 		});

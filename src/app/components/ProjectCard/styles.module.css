@@ -1,9 +1,10 @@
 .projectCard {
-    max-width: 331px;
-    width: 320px;
+    width: 70vw;
+    max-width: 320px;
     background: #444444;
     margin: 0 auto;
     height: 297px;
+    display: inline;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
