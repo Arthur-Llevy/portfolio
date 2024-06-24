@@ -52,8 +52,9 @@ export default function Home() {
       <section className={styles.training} id="training">
         <h1>Formação</h1>
         <div className={styles.cards}>
-          {trainings.map(training => (
+          {trainings.map((training, index) => (
             <Card 
+              key={index}
               starts={training.starts}
               ends={training.ends}
               institution={training.institution}
