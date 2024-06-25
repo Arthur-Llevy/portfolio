@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Header from './components/Header/';
 import Footer from './components/Footer/';
 
-const karla = Karla({ subsets: ["latin"] });
+const karla = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Meu Portfolio",

@@ -13,9 +13,14 @@ body {
   display: flex;
 }
 
+.content {
+  margin: 0 auto;
+}
+
 @media (min-width: 1024px) and (min-height: 830px) { 
   .content {
     margin: 0 0 0 30vw;
+    width: 70vw;
   }
 }
 

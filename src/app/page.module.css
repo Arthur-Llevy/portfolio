@@ -92,7 +92,6 @@
 @media (min-width: 1024px) and (min-height: 830px) {
     .about, .training, .projects {
         margin: 108px auto 50px auto;
-        width: 70vw;
     }
 
     .about, .training, .projects {
@@ -103,7 +102,6 @@
         flex-direction: column;
         margin: 0 auto 70px auto;
         align-items: center;
-
     }
 
     :is(.about, .training, .projects) h1 {
