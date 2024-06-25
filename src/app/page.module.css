@@ -32,10 +32,12 @@
 }
 
 .about p {
-	color: #EEEEEE;
+    color: #EEEEEE;
     padding: 20px;
     font-size: 18px;
     text-align: center;
+    width: 100%;
+    max-width: 500px;
 }
 
 .training h1 {
@@ -85,4 +87,8 @@
     display: flex;
     width: calc(2*320px);
     gap: 20px;
+}
+
+@media (min-width: 1024px) and (min-height: 830px) {
+
 }

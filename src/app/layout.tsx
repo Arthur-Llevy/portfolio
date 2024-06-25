@@ -24,7 +24,9 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={karla.className}>
         <Header />
-        {children}
+        <main className='content'>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

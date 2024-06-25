@@ -9,3 +9,9 @@ html {
   background: #2C2C2C;
 }
 
+@media (min-width: 1024px) and (min-height: 830px) { 
+  .content {
+    margin: 0 0 0 30vw;
+  }
+}
+
