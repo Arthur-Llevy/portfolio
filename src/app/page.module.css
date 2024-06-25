@@ -90,5 +90,26 @@
 }
 
 @media (min-width: 1024px) and (min-height: 830px) {
+    .about, .training, .projects {
+        margin: 108px auto 50px auto;
+        width: 40vw;
+    }
 
+    .about, .training, .projects {
+        background: #2C2C2C;
+        height: calc(100vh - 70px);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 70px auto;
+        align-items: center;
+    }
+
+    :is(.about, .training, .projects) h1 {
+        display: none;
+    }
+
+    .projects {
+        align-items: flex-start;
+    }
 }
