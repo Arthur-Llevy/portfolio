@@ -1,5 +1,5 @@
 .card {
-	width: 100%;
+    width: 100%;
     max-width: 385px;
     background: #444444;
     border-radius: 5px;
@@ -7,11 +7,15 @@
     height: 55px;
     overflow: hidden;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas:
+        'title'
+        'institution'
+        'type'
+        'year';
     gap: 6px;
     transition: .2s;
-    justify-content: flex-start;
+    grid-template-rows: 20px 20px 20px 20px;
     box-shadow: 0px 1px 4px rgb(0 0 0 / 25%);
 }
 
@@ -34,4 +38,16 @@
     left: calc(100% - 20px);
     cursor: pointer;
     transform: translateY(-50%);
+}
+
+@media (max-width: 370px) {
+    .card h2 {
+        font-size: 4.1vw;
+        color: #eee;
+    }
+
+    .card p {
+        font-size: 3.9vw;
+        color: #D0D0D0;
+    }
 }

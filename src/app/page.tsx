@@ -31,7 +31,7 @@ export default function Home() {
     {
       starts: '2024',
       ends: '2029',
-      course: 'Engenharia da computação',
+      course: 'Engenharia da Computação',
       institution: 'Universidade de Pernambuco',
       type: 'Bacharelado'
     }
