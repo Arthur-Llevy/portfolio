@@ -109,6 +109,10 @@
     }
 
     .projects {
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .projects .tag {
+        padding: 0;
     }
 }
